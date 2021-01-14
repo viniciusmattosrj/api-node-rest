@@ -46,7 +46,7 @@ router.post('/authenticate', async(req, res) => {
 
     res.send({ 
         user, 
-        token: gerenateToken({ id: user.id }),
+        token: generateToken({ id: user.id }),
     });
 });
 
