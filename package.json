@@ -4,16 +4,23 @@
     "body-parser": "^1.19.0",
     "commitizen": "^4.2.2",
     "express": "^4.17.1",
+    "fs": "^0.0.1-security",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.11",
-    "nodemon": "^2.0.7"
+    "nodemailer": "^6.4.17",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "nodemon": "^2.0.7",
+    "normalize-port": "^1.0.0",
+    "path": "^0.12.7"
   },
   "scripts": {
     "commit": "cz",
-    "start": "npx nodemon src/index.js"
+    "start": "npx nodemon -r dotenv/config src/index.js"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "3.3.0"
+    "cz-conventional-changelog": "3.3.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.18.0"
   },
   "config": {
     "commitizen": {
