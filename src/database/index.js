@@ -5,7 +5,8 @@ mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://10.11.0.4:27017/noderest', { 
     useNewUrlParser: true, 
     useUnifiedTopology: true,
-    useCreateIndex: true
+    useCreateIndex: true,
+    useFindAndModify: false 
 });
 
 module.exports = mongoose;
