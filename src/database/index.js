@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
+const { dbConnection, dbHost, dbPort, dbDatabase } = require('../config/database.js');
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://10.11.0.4:27017/noderest', { 
+mongoose.connect(`${dbConnection}://${dbHost}:${dbPort}/${dbDatabase}`, { 
     useNewUrlParser: true, 
     useUnifiedTopology: true,
     useCreateIndex: true,
